@@ -21,3 +21,5 @@ argument can be set to "no", so that the simulated data doesn't surpass the limi
 requires an extra argument ("obs") when applying the bias factor. The "preci" argument needs to be set to "FALSE" when using this method to variables 
 other than precipitation.
 - gqm (gama quantile mapping): used only for precipitation.
+
+In this case, for correcting streamflow data, the eqm method provided the best results.
