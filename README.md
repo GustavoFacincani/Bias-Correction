@@ -44,4 +44,5 @@ References
 - Cooper, R. T. (2019). Projection of future precipitation extremes across the Bangkok Metropolitan Region. Heliyon, 5(5), e01678.
 - Mendez, M., Maathuis, B., Hein-Griggs, D., & Alvarado-Gamboa, L. F. (2020). Performance evaluation of bias correction methods for climate change monthly precipitation projections over Costa Rica. Water, 12(2), 482.
 - Miralha, L., Muenich, R. L., Scavia, D., Wells, K., Steiner, A. L., Kalcic, M., ... & Kirchhoff, C. J. (2021). Bias correction of climate model outputs influences watershed model nutrient load predictions. Science of The Total Environment, 759, 143039.
+- Mishra, V., Bhatia, U., & Tiwari, A. D. (2020). Bias-corrected climate projections for South Asia from coupled model intercomparison project-6. Scientific data, 7(1), 1-13.
 - Shen, C., Duan, Q., Miao, C., Xing, C., Fan, X., Wu, Y., & Han, J. (2020). Bias Correction and Ensemble Projections of Temperature Changes over Ten Subregions in CORDEX East Asia. Advances in Atmospheric Sciences, 37(11), 1191-1210.
