@@ -17,9 +17,24 @@ bias factor can be 5-7 (increasing the flows in 5-7 times), and that causes high
 doesn't cause this problem.
 - eqm (empirical quantile mapping): this method is applicable to any variable, as it's used to calibrate the simulated Cumulative Distribution Function 
 (CDF) by adding to the observed quantiles, both the mean delta change and the individual delta changes, in the corresponding quantiles. The extrapolate 
-argument can be set to "no", so that the simulated data doesn't surpass the limits found in the observed data, bouding it to the range of observed. It 
-requires an extra argument ("obs") when applying the bias factor. The "preci" argument needs to be set to "FALSE" when using this method to variables 
-other than precipitation.
+argument can be set to "no", so that the simulated data doesn't surpass the limits found in the observed data, bouding it to the range of observed, not
+producing biased extremes. It requires an extra argument ("obs") when applying the bias factor. The "preci" argument needs to be set to "FALSE" when using 
+this method to variables other than precipitation.
 - gqm (gama quantile mapping): used only for precipitation.
 
-In this case, for correcting streamflow data, the eqm method provided the best results.
+
+Bias correction is an active area of research; a variety of techniques have been examined, ranging from simple scaling to more complex distribution mapping 
+methods (Cooper, 2019). Bias corrected results can vary by bias correction technique, model, climate output (Miralha et al., 2021), or even study area (Coper,
+2019). Therefore, it is recommended that bias correction methods be fully documented and results from pre- and post- correction presented (Coper, 2019).
+In this case, for correcting streamflow data, the eqm method provided the best results According to Mendez et al. (2020), the quantile mapping approach 
+corrects the distribution of the simulated data, so that the variability of corrected data is more consistent with the observed. 
+The authors used this approach to bias correct precipitation data, stating that it non-linearly corrects the mean, standard deviation (variance), quantiles, 
+wet frequencies and intensities preserving the extremes, outperforming methods such as linear scaling, power transformation of precipitation, gamma quantile 
+mapping and gamma-pareto quantile mapping. This method adjusts 99 percentiles and linearly interpolates inside this range every two consecutive percentiles
+(Miralha et al., 2021). Mishra et al. (2020) also used the eqm method to bias correct historical and future simulations of precipitation, minimum and maximum
+temperatures at the daily time scale.
+
+
+Cooper, R. T. (2019). Projection of future precipitation extremes across the Bangkok Metropolitan Region. Heliyon, 5(5), e01678.
+Mendez, M., Maathuis, B., Hein-Griggs, D., & Alvarado-Gamboa, L. F. (2020). Performance evaluation of bias correction methods for climate change monthly precipitation projections over Costa Rica. Water, 12(2), 482.
+Miralha, L., Muenich, R. L., Scavia, D., Wells, K., Steiner, A. L., Kalcic, M., ... & Kirchhoff, C. J. (2021). Bias correction of climate model outputs influences watershed model nutrient load predictions. Science of The Total Environment, 759, 143039.
